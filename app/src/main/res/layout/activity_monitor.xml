@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context="com.briancottrell.selfiesun.MonitorActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|top"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitCenter" />
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/fullscreen_content">
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls_top" style="@android:style/ButtonBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal" android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:background="@color/black_overlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:id="@+id/batteryLabelTextView"
+                android:text="@string/battery_text"
+                android:layout_weight="0"
+                android:layout_gravity="left|center_vertical"
+                style="?actionMenuTextAppearance"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/batteryChargeIndicator"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_lock_idle_charging"
+                android:tint="@color/accent_material_light"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/batteryLevelTextView"
+                android:layout_weight="0.48"
+                android:layout_gravity="left|center_vertical"
+                android:text="--" />
+
+        </LinearLayout>
+        <!--<FrameLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"-->
+            <!--android:layout_width="match_parent" android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|center_horizontal"-->
+            <!--android:background="@color/black_overlay"-->
+            <!--tools:ignore="UselessParent"-->
+            <!--android:columnCount="3"-->
+            <!--android:rowCount="2">-->
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|bottom"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:id="@+id/imageTypeListContainer"-->
+                <!--android:focusableInTouchMode="false"-->
+                <!--android:visibility="gone">-->
+
+                <!--<ListView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/imageTypeListView"-->
+                    <!--android:layout_gravity="center_vertical|bottom|left"-->
+                    <!--android:layout_marginBottom="60dp"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                    <!--android:alpha="0.9"-->
+                    <!--android:layout_weight="0.25"-->
+                    <!--android:choiceMode="singleChoice"-->
+                    <!--android:clickable="true"-->
+                    <!--android:dividerHeight="0dp" />-->
+
+                <!--<ListView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/paletteListView"-->
+                    <!--android:layout_marginBottom="60dp"-->
+                    <!--android:alpha="0.9"-->
+                    <!--android:layout_gravity="bottom|right"-->
+                    <!--android:layout_weight="0.75"-->
+                    <!--android:choiceMode="singleChoice"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                    <!--android:clickable="true"-->
+                    <!--android:dividerHeight="0dp" />-->
+            <!--</LinearLayout>-->
+
+        <!--</FrameLayout>-->
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60dp"
+        android:id="@+id/temperatureReading"
+        android:layout_gravity="center"
+        android:text="No Reading" />
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Selfie Suntan Monitor</string>
+    <string name="title_activity_monitor">Monitor Activity</string>
+
+    <string name="suntan_level_text">Select your desired suntan Level</string>
+    <string name="suntan_level_mild">Mild</string>
+    <string name="suntan_level_medium">Medium</string>
+    <string name="suntan_level_Well">Well Done</string>
+    <string name="sunblock_level_text">What level of sunblock are you using?</string>
+    <string name="sunblock_level_mild">0-SPF5</string>
+    <string name="sunblock_level_medium">SPF6-15</string>
+    <string name="sunblock_level_Well">SPF16-35</string>
+    <string name="sunblock_level_High">SPF36+</string>
+    <string name="simulate_text">Simulator Mode</string>
+    <string name="start_monitor">Start</string>
+
+    <string name="suntan_reached_title">You\'ve reached your desired tan level</string>
+    <string name="suntan_reached_message">Consider reducing your sun exposure or turning over to avoid sum damage</string>
+    <string name="suntan_reached_dismiss">Okay</string>
+
+    <string name="warning_reached_title">You\'re burning up</string>
+    <string name="warning_reached_message">Get out of the sun now!</string>
+    <string name="warning_reached_dismiss">Got it</string>
+
+    <string name="battery_text">Battery</string>
+    <string name="battery_low_title">Low battery</string>
+    <string name="battery_low_message">Your battery is running low and the app will shut down soon</string>
+    <string name="battery_low_dismiss">Okay</string>
+
+</resources>
